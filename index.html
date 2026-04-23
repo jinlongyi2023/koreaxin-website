@@ -460,6 +460,67 @@
         }
 
         /* ════════════════════════════
+           MY COURSES CTA
+        ════════════════════════════ */
+        #courses {
+            background: linear-gradient(135deg, #fff0f2 0%, #fff8f0 100%);
+            padding: 4rem 1.5rem;
+        }
+        .courses-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .courses-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            background: #ff2442;
+            color: #fff;
+            font-size: .72rem;
+            font-weight: 700;
+            padding: .28rem .9rem;
+            border-radius: 20px;
+            letter-spacing: .06em;
+            margin-bottom: 1.2rem;
+        }
+        .courses-title {
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: .8rem;
+        }
+        .courses-desc {
+            font-size: .97rem;
+            color: var(--gray-600);
+            line-height: 1.85;
+            margin-bottom: 2rem;
+            max-width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .courses-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .6rem;
+            background: #ff2442;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: .85rem 2.4rem;
+            border-radius: 50px;
+            box-shadow: 0 8px 24px rgba(255,36,66,.30);
+            transition: transform var(--transition), box-shadow var(--transition);
+            letter-spacing: .04em;
+        }
+        .courses-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(255,36,66,.40);
+        }
+        .courses-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+        /* ════════════════════════════
            SOCIAL / QR
         ════════════════════════════ */
         #social { background: #fff; }
@@ -596,6 +657,7 @@
         <li><a href="#author">关于作者</a></li>
         <li><a href="#downloads">资料下载</a></li>
         <li><a href="#videos">视频课程</a></li>
+        <li><a href="#courses">我的课程</a></li>
         <li><a href="#books">我的书籍</a></li>
         <li><a href="#social">关注我</a></li>
     </ul>
@@ -908,6 +970,29 @@
 
         </div>
 
+    </div>
+</section>
+
+<!-- ════════ COURSES ════════ -->
+<section id="courses">
+    <div class="courses-inner">
+        <div class="courses-badge">
+            <!-- XHS icon -->
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+                <rect width="20" height="20" rx="5" fill="white" opacity=".25"/>
+                <path d="M10 4v12M4 10h12" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            小红书店铺
+        </div>
+        <h2 class="courses-title">我的课程</h2>
+        <p class="courses-desc">在小红书开设的韩语视频课程，涵盖TOPIK备考、标准韩国语、韩国语教程等系列，购买后可反复观看，随时随地学习。</p>
+        <a class="courses-btn" href="https://www.xiaohongshu.com/vendor/691d966397f12100154741be" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" rx="6" fill="white" opacity=".2"/>
+                <path d="M12 5v14M5 12h14" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            前往小红书店铺
+        </a>
     </div>
 </section>
 

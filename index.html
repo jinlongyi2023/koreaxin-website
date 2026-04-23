@@ -624,8 +624,9 @@
     <div class="nav-logo">金龙一 · TOPIK备考用书</div>
     <ul class="nav-links" id="navLinks">
         <li><a href="#author">关于作者</a></li>
-        <li><a href="#books">我的书籍</a></li>
         <li><a href="#downloads">资料下载</a></li>
+        <li><a href="#videos">视频课程</a></li>
+        <li><a href="#books">我的书籍</a></li>
         <li><a href="#social">关注我</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
@@ -711,7 +712,7 @@
         </div>
 
         <!-- 视频课程 -->
-        <p class="video-section-title">视频课程</p>
+        <p class="video-section-title" id="videos">视频课程</p>
         <div class="video-list">
 
             <a class="video-item" href="https://www.bilibili.com/video/BV1nJ411L7Nv/" target="_blank" rel="noopener">
@@ -1209,9 +1210,24 @@
 
 <!-- ── FOOTER ── -->
 <footer>
-    <p>© 2025 金龙一 · TOPIK备考用书</p>
+    <p>© 2026 金龙一 · TOPIK备考用书</p>
     <p style="margin-top:.4rem;font-size:.75rem;opacity:.7;">所有内容版权所有，未经授权禁止转载</p>
+    <p style="margin-top:.5rem;font-size:.82rem;opacity:.75;">
+        联系：<span id="contact-email" style="cursor:pointer;text-decoration:underline;" title="点击复制邮箱"></span>
+    </p>
 </footer>
+<script>
+(function(){
+    var u='koreaxin',d='foxmail.com',e=u+'@'+d;
+    var el=document.getElementById('contact-email');
+    el.textContent=e;
+    el.onclick=function(){
+        navigator.clipboard&&navigator.clipboard.writeText(e);
+        el.textContent='已复制！';
+        setTimeout(function(){el.textContent=e;},2000);
+    };
+})();
+</script>
 
 <!-- ── LIGHTBOX ── -->
 <div id="lightbox" onclick="closeLB()">
